@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Summarized data is nice to work with, but when should it be used?"
-date:   2022-09-28
+date:   2022-09-23
 author: Naomi Zubeldia
 description: A small post to get you thinking on data summaries and if they are what you need for your project.
 image: /assets/images/flowerdata.jpg
