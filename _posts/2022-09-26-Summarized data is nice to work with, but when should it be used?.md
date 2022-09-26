@@ -45,7 +45,7 @@ There are times that data is dirty and needs a bit of cleaning, which is probabl
 
 It can be overwhelming with all “whatever you wants”, which is hard because each test and dataset is unique. First, just take in your data to see what you feel it needs. Then, fully see what your assignment needs and follow that. As a teacher once told me, love your data! It may be tempting to try to summarize it for convenience but that may not be what it needs.
 
-*The source for Anscombes's quartet pictures:https://en.wikipedia.org/wiki/Anscombe%27s_quartet*
+*The source for Anscombes's quartet pictures:[https://en.wikipedia.org/wiki/Anscombe%27s_quartet](https://naomizubeldia.github.io/stat386-projects/)*
 
 
 
