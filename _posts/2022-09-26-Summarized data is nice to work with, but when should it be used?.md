@@ -22,7 +22,7 @@ Do not think I am hating on summarized data. Heck, I love it too! I recently tal
 Here are some summary stats that you are probably very familiar with: mean, median, mode, standard deviation, variance, and range. These simple numbers let you understand the average over all the data, the middle of it helps you see if it is skewed, the spread of it, and much more. It is like reading a sparknotes page for statistics! I want to share a famous example of summaries being done on some data → Anscomes’s quartet!
 
 
-<img src="https://github.com/naomizubeldia/stat386-projects/raw/main/assets/images/anscombesdata.png" width="400"/> <img src="https://github.com/naomizubeldia/stat386-projects/raw/main/assets/images/anscombessum.jpg" width="600" height="250"/>
+<img src="https://github.com/naomizubeldia/stat386-projects/raw/main/assets/images/anscombesdata.png" width="200"/> <img src="https://github.com/naomizubeldia/stat386-projects/raw/main/assets/images/anscombessum.jpg" width="400" height="150"/>
 
 
 Now, none of this data is real but look at how all four sets have nearly identical simple descriptive statistics. Anscomes then graphed each of the sets, which I have put below.
