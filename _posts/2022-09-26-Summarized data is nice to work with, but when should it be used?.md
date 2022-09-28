@@ -45,6 +45,16 @@ There are times that data is dirty and needs a bit of cleaning, which is probabl
 
 It can be overwhelming with all “whatever you wants”, which is hard because each test and dataset is unique. First, just take in your data to see what you feel it needs. Then, fully see what your assignment needs and follow that. As a teacher once told me, love your data! It may be tempting to try to summarize it for convenience but that may not be what it needs.
 
+
+Here are some other websites you can futher your learning of summarizing data: https://medium.com/analytics-vidhya/descriptive-statistics-acba9c2f8e5b
+https://towardsdatascience.com/dont-ignore-bears-the-pitfalls-of-summarizing-data-with-medians-3c07b4d509db
+
+
+
+
+
+
+
 *The source for Anscombes's quartet pictures:[https://en.wikipedia.org/wiki/Anscombe%27s_quartet](https://naomizubeldia.github.io/stat386-projects/)*
 
 
