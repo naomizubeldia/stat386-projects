@@ -12,10 +12,11 @@ The internet is a place full of data that we can access from just our fingertips
 For this how to, I decided to scrape recipe nutrients data from Spoonacular. I choose recipes because I really like food but also no one talks about how hard it is to cook for yourself after you leave home. Recently, my husband and I have been trying to eat healthier but it is hard to think of different recipes that fit what we want so we usually end up eating the same things, which get old fast. Spoonacular allows you to scrape recipes based on parameters you set. I decided to scrape recipes that have at least 15g of protein and less than 100 carbs in them per serving.
 
 <p align="center">
-<img src="https://github.com/naomizubeldia/stat386-projects/raw/main/assets/images/recipe.jpg" "width"=300 height="300">
+<img src="https://github.com/naomizubeldia/stat386-projects/raw/main/assets/images/recipe.jpg" width="300" height="300">
 </p>
 
 For a brief refresher before I explain the scraping, an API is an application programming software that allows for two or more computer programs to talk to each other. I did say earlier than an API is an easier way to scrape but it does take some patiences to it. Each API is unique so there is no exact way to use every one the same. I found that the key is to find one that is free and has good documentation. Most APIs have their documentation on the site but you do have to search for it, which is what happened with the Spoonacular data. For more information on APIs, reference this website [https://www.infoworld.com/article/3269878/what-is-an-api-application-programming-interfaces-explained.html](url)
+
 
 After I picked the API I wanted to use, I made sure to check the terms of use. You want to make sure to follow copyright rules. Spoonacular is pretty open to their data being used expect for if you want to copy what their site does. In the documentation part of their site, I found the API specific to pull recipes based on nutrients and looked at what parameters I could set. Parameters for APIs are what restrictions you want to put on your data search. For the nutrients, there were so many! I decided to just go with carbs and proteins since I understand what those parameters mean but you could totally set the amount of Iodine you would like.
 
