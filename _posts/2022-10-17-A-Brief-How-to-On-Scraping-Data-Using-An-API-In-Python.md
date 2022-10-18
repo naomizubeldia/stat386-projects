@@ -2,7 +2,7 @@
 layout: post
 title:  " A Brief How-to On Scraping Data Using An API In Python"
 date:   2022-10-17
-author: Project Author
+author: Naomi Zubeldia
 description: From scraping the web to scraping your plate, you will get to see recipe data get scraped using an API.
 image: /assets/images/soup.jpg
 ---
