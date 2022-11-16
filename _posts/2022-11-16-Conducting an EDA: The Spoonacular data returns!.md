@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Conducting an EDA: The Spoonacular data returns!"
-date:   2022-11-17
+date:   2022-11-16
 author: Naomi Zubeldia
 description: Learning what an EDA through a humble example :)
 image: /assets/images/sunshinedata.jpg
