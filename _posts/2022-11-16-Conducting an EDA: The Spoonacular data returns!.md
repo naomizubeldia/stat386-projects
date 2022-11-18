@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Conducting an EDA: The Spoonacular data returns!"
-date:   2022-11-16
+date:   2022-11-17
 author: Naomi Zubeldia
 description: Observing an EDA through data I scraped :)
 image: /assets/images/sunshinedata.jpg
@@ -49,9 +49,9 @@ with the title column because it does not have unique words/strings I am measuri
 
 To build off the basic summary stats, I found all the dishes that had the max value of my calories, proteins, fats, and carbs columns.For example, I have attached below the dish with the higest calories.
 
-
-<img src="https://github.com/naomizubeldia/stat386-projects/raw/main/assets/images/dish.png" width="650" height="150">
-
+<p align="center">
+<img src="https://github.com/naomizubeldia/stat386-projects/raw/main/assets/images/dish.png" width="550" height="150">
+</p>
 
 
 ## Visuals in EDAs
@@ -87,12 +87,10 @@ The highest correlation was between fat and calories, which supports what I saw 
 </p>
 
 # At the end of the day, do an EDA
-Overall, I found from the EDA that some nutrients affect others. Also, it seems that there may be a influence of the ingredients on what nutrient is higher vs others, which opens to further investigation as well as additional data needed. I think it is interesting to see what nutrients were most influenctial as well as how there did not seem to be repeated recipes in the maxes I check. I feel that there is more of a story with the correlations between nutrients that I am interested in exploring more! Doing an EDA 
+Overall, I found from the EDA that some nutrients affect others. Also, it seems that there may be a influence of the ingredients on what nutrient is higher vs others, which opens to further investigation as well as additional data needed. I think it is interesting to see what nutrients were most influenctial as well as how there did not seem to be repeated recipes in the maxes I check. I feel that there is more of a story with the correlations between nutrients that I am interested in exploring more!
 
-I decided this is all I was going to do for my EDA especially since I found that that there may be a relationship for my to explore in further analysis.
-EDAs can totally be longer or shorter depending on what you want to look at. For this dataset, I could
-go more into depth on what foods in the titles of the recipes seem to show up more for certain variables. There is so much to do with an eda! If you would like to 
-see all the code for the one I created you can access it in this repository: [https://github.com/naomizubeldia/Spoonacular-Recipe-Nutrients-Dataset](url)
+Doing an EDA is such a nice way to get an idea of what the story about your data is. It is also a very flexible way that allows people to do as much or as little work to get to know their data. I totally could have gone more into this EDA by looking at the titles, but I decided I was interested in the nutrients based off of my findings. There is so much to do with an EDA! If you would like to 
+see all the code for the Spoonacular EDA I created, you can access it in this repository: [Spoonacular Github Repository](https://github.com/naomizubeldia/Spoonacular-Recipe-Nutrients-Dataset)
 
 I hope from this post you have seen the benefits of doing an EDA on your data to get to know its story.
 Try exploring what else you could do for an EDA. Please let me know cool things you learn or have done for one!!
