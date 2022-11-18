@@ -3,7 +3,7 @@ layout: post
 title:  "Conducting an EDA: The Spoonacular data returns!"
 date:   2022-11-16
 author: Naomi Zubeldia
-description: Learning what an EDA through a humble example :)
+description: Observing an EDA through data I scraped :)
 image: /assets/images/sunshinedata.jpg
 ---
 <p align="center">
@@ -15,7 +15,7 @@ a ticket or if one part of the U.S. seems to be dryer, which all depends on what
 a data scientist is to be able to find that big picture amoung all those numbers. The best way to do this is through an EDA.
 
 # What is an EDA??
-An EDA is an exploratory data analysis. In this analysis, you do not really do any computing or answering the question
+For a brief refresher, an EDA is an exploratory data analysis. In this analysis, you do not really do any computing or answering the question
 you are seeking. You first are observing the data through summary statistics as well as different graphs. An EDA will
 help guide your overall analysis. It also helps you to know where to look in the data without the hassel of doing a ton
 of work to discover it was all for not. I feel that the key to conducting a profitable EDA is to first have the mindset
@@ -27,26 +27,32 @@ of --> what does this data make me curious about?? This question will spark othe
 
 
 
-# Getting into an EDA
-I recently created an EDA for the Spoonacular data that I scraped in my last post. That data is honestly not the most interesting at 
+# Getting into the EDA
+I recently created an EDA for Spoonacular data, which I scraped myself. This data is about recipes and the nutrient levels of those meals. I specifically scrapped those with at least 15g of protein in them. The data is honestly not the most interesting at 
 first glance because it is just recipe data. However, I found some interesting things that would be fun to go into further analysis about.
 Before starting an EDA, you need to make sure that you data is clean, and I mean in terms of being able to do your main
-analysis on it. I dropped the image columns, which is not really helpful in data analysis. You should look for duplicates and drop those too.
+analysis on it. I dropped some image columns, which were not really helpful for any data analysis. You should look for duplicates and drop those too.
 I had to fix the protein, fat , and carb columns to not include the 'g' for gram, which I then included in the column names.
 Other basic cleaning steps to maybe implement would be converting date columns to datetime as well as turning string columns to 
 be numeric if that is possible with the data.
 
-# Spoonacular EDA Example
+# Spoonacular EDA
 
 ### A basic start
-To start the EDA, I prefer to pull up basic summary statistics. This would include the means of each numeric column, stardard deviations,
+To start an EDA, I prefer to pull up basic summary statistics. This would include the means of each numeric column, stardard deviations,
 min, max, and variable type. If you are working with string columns, you could pull up the amount of unqiue strings. I did not do this
 with the title column because it does not have unique words/strings I am measuring my data off of.
-To build off the basic summary stats, I found all the dishes that had the max value of my calories, proteins, fats, and carbs columns.
 
 <p align="center">
 <img src="https://github.com/naomizubeldia/stat386-projects/raw/main/assets/images/summary.png" width="350" height="250">
 </p>
+
+To build off the basic summary stats, I found all the dishes that had the max value of my calories, proteins, fats, and carbs columns.For example, I have attached below the dish with the higest calories.
+
+<p align="center">
+<img src="https://github.com/naomizubeldia/stat386-projects/raw/main/assets/images/dish.png" width="350" height="250">
+</p>
+
 
 ## Visuals in EDAs
 
@@ -81,6 +87,8 @@ The highest correlation was between fat and calories, which supports what I saw 
 </p>
 
 # At the end of the day, do an EDA
+Overall, I found from the EDA that some nutrients affect others. Also, it seems that there may be a influence of the ingredients on what nutrient is higher vs others, which opens to further investigation as well as additional data needed. I think it is interesting to see what nutrients were most influenctial as well as how there did not seem to be repeated recipes in the maxes I check. I feel that there is more of a story with the correlations between nutrients that I am interested in exploring more! Doing an EDA 
+
 I decided this is all I was going to do for my EDA especially since I found that that there may be a relationship for my to explore in further analysis.
 EDAs can totally be longer or shorter depending on what you want to look at. For this dataset, I could
 go more into depth on what foods in the titles of the recipes seem to show up more for certain variables. There is so much to do with an eda! If you would like to 
