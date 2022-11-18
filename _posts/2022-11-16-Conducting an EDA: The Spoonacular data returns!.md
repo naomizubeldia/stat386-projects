@@ -49,9 +49,9 @@ with the title column because it does not have unique words/strings I am measuri
 
 To build off the basic summary stats, I found all the dishes that had the max value of my calories, proteins, fats, and carbs columns.For example, I have attached below the dish with the higest calories.
 
-<p align="center">
-<img src="https://github.com/naomizubeldia/stat386-projects/raw/main/assets/images/dish.png" width="350" height="250">
-</p>
+
+<img src="https://github.com/naomizubeldia/stat386-projects/raw/main/assets/images/dish.png" width="650" height="150">
+
 
 
 ## Visuals in EDAs
