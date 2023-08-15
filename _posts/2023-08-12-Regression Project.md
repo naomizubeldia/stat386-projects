@@ -4,7 +4,7 @@ title:  "Regression Project"
 date:   2023-08-12
 author: Naomi Zubeldia
 description: This is a group project I completed my last semester in a Machine Learning Class
-image: /assets/images/sunshinedata.jpg
+image: /assets/images/drawings.jpg
 ---
 
 So, it has been a while since I updated and I apologize... I recently graduated from BYU with a Bachelor's Degree in Statistics YAY!!!! 
