@@ -4,7 +4,7 @@ title:  "Classification Project"
 date:   2023-08-16
 author: Naomi Zubeldia
 description: Finding the best classification model - Machine Learning Class project
-image: /assets/images/statistics.jpg
+image: /assets/images/group.jpg
 ---
 
 I think it is really amazing that we are still able to work with data that is in categories through classification. I
@@ -39,6 +39,8 @@ from sklearn.compose import ColumnTransformer
 from sklearn.compose import make_column_selector as selector
 
 ```
+
+### Going Through The Random Forest
 We ended up deciding to use the RandomForestClassifier, which is paritially due for its short running time, better
 metrics, and overall reliability. I bet we might have not cleaned as well since our model was just okay at predicting, but
 it is good to start somewhere in your learning. For the cleaning, we made sure the data types where all the same and 
@@ -110,6 +112,8 @@ clf = Pipeline(
       steps=[("preprocessor", trainprocessor), ("model", RandomForestClassifier())])
 
 ```
+
+#### Tuning Hyperparamters
 To work around the long running times and my low powered RAM computer, I split the hypertuning using GridSearchCV 
 into two steps. I bet this affected the results, but I am not too sure. We found that the best criterion was
 entropy, n_estimators was 450, max_depth was 8, and max_features was sqrt.
@@ -153,7 +157,7 @@ print(skm.f1_score(ytest,pp2))
 print(skm.roc_auc_score(ytest,prob))
 
 ```
-
+### Refer To The Confusion Matrix
 We used the confusion matrix to visiually see the performance of the model. We got a bunch of true positives but 
 not very many true negatives. There were still thousands of results that were either false negative or positive. With
 being aware of that imbalance, we decided that using the accuracy score was not good for model evaluation. I finally
@@ -164,7 +168,7 @@ I advise for any of your classification projects you try to use the confusion ma
 is often deceiving. 
 We got a .67 for our AUC score with the random forest yay! 
 
-### Top most influential features on flight delays
+### Top Most Influential Features On Flight Delays
 For this project, my professor also wanted a list of the top 5 most important features on flight delays. we found 
 them to be from largest to smallest: number of people in the ground crew, the day of the week, and the lat/lon locations.
 Just remember, that our model only had about a 70% predicitive power, which shows flight delays are still difficult
@@ -179,8 +183,43 @@ df.assign(A = df['Coefficients'].abs()).sort_values(['A'],ascending=[False]).dro
 ```
 
 ### My proud moment of the project
+I managed to get an ANN through keras to run by myself... We did not have much time to work with them in my class.
+It did not end being better than the Random Forest but I wanted to include the code just for myself :) 
+I could not find where I tuned the hyperparameters unfortunately but you can do that.
+```
+tf.keras.backend.clear_session()
+tf.random.set_seed(42)
 
+#creating the model with two hidden layers
+model = tf.keras.Sequential([
+    tf.keras.layers.Flatten(input_shape=[380,]),
+    tf.keras.layers.Dense(74, activation="relu"),
+    tf.keras.layers.Dense(74, activation="relu"),
+    tf.keras.layers.Dense(74, activation="relu"),
+    tf.keras.layers.Dense(74, activation="relu"),
+    tf.keras.layers.Dense(1, activation="sigmoid")
+])
 
+#compiling the model with adam and learning rate of .009
+model.compile(loss="binary_crossentropy",
+              optimizer=tf.keras.optimizers.Adam(learning_rate=.009),
+              metrics=["AUC"])
+
+#early stopping function
+early_stopping_cb = tf.keras.callbacks.EarlyStopping(patience=10, 
+                                                     restore_best_weights=True)
+#fitting the model
+history = model.fit(Xtrain2, ytrain2, epochs=100,
+                    validation_data=(Xvalid, yvalid),
+                    callbacks=[ early_stopping_cb])
+
+#evaluating the auc of the test and training
+model.evaluate(xtrain, ytrain)
+model.evaluate(xtest, ytest)
+
+```
+The score we got was .65 so just a bit less reliable than the random forest.
+Celebrate things you are proud of in coding/statistics even if they are not that big when comparing to others. It helps you see your progress.
 
 
 
